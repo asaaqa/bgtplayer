@@ -19,7 +19,7 @@ RESTART_COMMAND = get_command("RESTART_COMMAND")
 
 
 @app.on_message(
-    filters.command(RELOAD_COMMAND)
+    filters.command(RELOAD_COMMAND,"")
     & filters.group
     & ~filters.edited
     & ~BANNED_USERS
