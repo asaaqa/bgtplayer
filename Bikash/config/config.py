@@ -8,11 +8,12 @@ from pyrogram import filters
 
 if os.path.exists("Internal"):
   load_dotenv("Internal")
+#, "/ ! ." 
 
 API_ID = int(getenv("API_ID" ""))
 API_HASH = getenv("API_HASH")
 BOT_TOKEN = getenv("BOT_TOKEN")
-COMMAND_PREFIXES = list(getenv("COMMAND_PREFIXES", "/ ! .","").split())
+COMMAND_PREFIXES = list(getenv("COMMAND_PREFIXES","").split())
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 LOG_GROUP_ID = int(getenv("LOG_GROUP_ID"))
 MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "༺  𝐌𝐮𝐬𝐢𝐜  ༻")
