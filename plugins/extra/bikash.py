@@ -6,7 +6,7 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
 
 @app.on_message(
-    filters.command("bikash")
+    filters.command(["bikash","المطور"]),prefixes= ["/", "!","","#"]) 
     & filters.group
     & ~filters.edited & filters.group & ~filters.edited)
 async def bikash(client: Client, message: Message):
@@ -17,18 +17,18 @@ async def bikash(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🥀 𝐁𝐢𝐤𝐚𝐬𝐡 🥀", url=f"https://t.me/BikashHalder")
+                        "🥀 المطور 🥀", url=f"https://t.me/ASAKIOP")
             ],          
             [
                     InlineKeyboardButton(
-                        "🥀 𝐏𝐫𝐨𝐦𝐨𝐭𝐢𝐨𝐧 🥀", url=f"https://t.me/BgtPromote")
+                        "🥀 سورس 🥀", url=f"https://t.me/Mlze1bot")
                 ],
                 [
                     InlineKeyboardButton(
-                        "🥀 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 🥀", url=f"https://t.me/Bgt_Chat"
+                        "🥀 جروب الدعم 🥀", url=f"https://t.me/ASAAQLIO"
                     ),
                     InlineKeyboardButton(
-                        "🥀 𝐔𝐩𝐝𝐚𝐭𝐞𝐬 🥀", url=f"https://t.me/BikashGadgetsTech")
+                        "🥀 قناة السورس 🥀", url=f"https://t.me/Mlze1bot")
                 ]
             ]
         ),
