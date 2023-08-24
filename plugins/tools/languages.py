@@ -25,7 +25,7 @@ def lanuages_keyboard(_):
             callback_data=f"languages:en",
         ),        
 InlineKeyboardButton(
-            text="يمني 🇾🇪"
+            text="Yemene 🇾🇪", 
             callback_data=f"languages:bn",
         ),
     )
