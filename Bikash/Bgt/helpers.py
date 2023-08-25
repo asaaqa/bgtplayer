@@ -1,21 +1,13 @@
-HELP_1 = """✅**<u>Admin Commands:</u>**
+HELP_1 = """✅**<u> • اوامر المشرفين :</u>**
 
-**c** stands for channel play.
+**c** اوامر التشغيل بالجروبات .
 
-/pause or /cpause - Pause the playing music.
-
-/resume or /cresume- Resume the paused music.
-
-/mute or /cmute- Mute the playing music.
-
-/unmute or /cunmute- Unmute the muted music.
-
-
-/skip or /cskip- Skip the current playing music.
-
-/stop or /cstop- Stop the playing music.
-
-/restart or /reload - Restart bot for your chat """
+/pause or /cpause • إيقاف تشغيل الموسيقى مؤقتا.
+/resume or /cresume • استئناف الموسيقى المتوقفة مؤقتا.
+/mute or /cmute • كتم صوت الموسيقى المشغلة.
+/unmute or /cunmute • إلغاء كتم صوت الموسيقى الصامتة.
+/skip or /cskip • تخطي تشغيل الموسيقى الحالية.
+/stop or /cstop- إيقاف تشغيل الموسيقى.. """
 
 HELP_2 = """✅<u>**Auth Users:**</u>
 Auth Users can use admin commands without admin rights in your chat.
