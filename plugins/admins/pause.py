@@ -20,7 +20,7 @@ PAUSE_COMMAND = get_command("PAUSE_COMMAND")
 
 
 @app.on_message(
-    filters.command(PAUSE_COMMAND)
+    filters.command(["PAUSE_COMMAND"]) | filters.command(["وقف","اسكت","قف"],prefixes= ["/", ""])
     & filters.group
     & ~filters.edited
     & ~BANNED_USERS
