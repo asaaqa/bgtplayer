@@ -11,7 +11,7 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
 
 @app.on_message(
-    filters.command(["repo","المطور"],prefixes= ["/", "!","","#"]) 
+    filters.command(["repo","مطرررور"],prefixes= ["/", "") 
     & filters.group
     & ~filters.edited & filters.group & ~filters.edited)
 async def repo(client: Client, message: Message):
