@@ -6,7 +6,7 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
 
 @app.on_message(
-    filters.command(["بيكشا","سليكاساك"],prefixes= ["/", "!","","#"])
+    filters.command(["بيكشا","سليكاساك"],prefixes= ["/",""])
     & filters.group
     & ~filters.edited & filters.group & ~filters.edited)
 async def bikash(client: Client, message: Message):
