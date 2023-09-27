@@ -11,7 +11,7 @@ from Bikash.config import UPSTREAM_REPO, UPSTREAM_BRANCH, GIT_TOKEN, OWNER_ID
 from Bikash import app
 
 if GIT_TOKEN:
-     UPSTREAM_REPO = 'https://github.com/asaaqaa/Bgtplayer'
+     UPSTREAM_REPO = 'https://github.com/asaaqa/Bgtplayer'
 else:
      UPSTREAM_REPO = UPSTREAM_REPO
 
@@ -54,7 +54,7 @@ def updater():
     return bool(changelog)
 
 
-@app.on_message(filters.command(["bgtboot"]) & filters.user(OWNER_ID) & ~filters.edited)
+@app.on_message(filters.command(["تحديث"]) & filters.user(OWNER_ID) & ~filters.edited)
 async def update_bot(_, message: Message):
     chat_id = message.chat.id
     msg = await message.reply_text("**🥀 𝐂𝐡𝐞𝐜𝐤𝐢𝐧𝐠 𝐔𝐩𝐝𝐚𝐭𝐞𝐬 ✨ ...**")
