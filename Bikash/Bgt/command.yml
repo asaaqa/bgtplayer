@@ -8,7 +8,7 @@
 
 # Bot Commands
 PING_COMMAND : ["ping", "بنك"]
-START_COMMAND : ["start", "تفعيل"]
+START_COMMAND : ["star", "تفعيل"]
 HELP_COMMAND : ["help", "ميوزك"]
 SETTINGS_COMMAND : ["settings", "اعدادات"]
 RELOAD_COMMAND : ["ريلود", "reload"]
