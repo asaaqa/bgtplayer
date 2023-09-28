@@ -5,7 +5,6 @@ from Bikash.core.mongo import mongodb
 
 channeldb = mongodb.cplaymode
 commanddb = mongodb.commands
-cleandb = mongodb.cleanmode
 playmodedb = mongodb.playmode
 playtypedb = mongodb.playtypedb
 langdb = mongodb.language
@@ -29,7 +28,6 @@ video = {}
 active = []
 activevideo = []
 command = []
-cleanmode = []
 nonadmin = {}
 vlimit = []
 maintenance = []
@@ -284,28 +282,8 @@ async def commanddelete_on(chat_id: int):
     except:
         pass
 
-
-# Clean Mode
-async def is_cleanmode_on(chat_id: int) -> bool:
-    if chat_id not in cleanmode:
-        return True
-    else:
-        return False
-
-
-async def cleanmode_off(chat_id: int):
-    if chat_id not in cleanmode:
-        cleanmode.append(chat_id)
-
-
-async def cleanmode_on(chat_id: int):
-    try:
-        cleanmode.remove(chat_id)
-    except:
-        pass
-
-
 # Non Admin Chat
+
 async def check_nonadmin_chat(chat_id: int) -> bool:
     user = await authdb.find_one({"chat_id": chat_id})
     if not user:
