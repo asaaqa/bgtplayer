@@ -12,15 +12,15 @@ def help_pannel(_, START: Union[bool, int] = None):
     second = [
         InlineKeyboardButton(
             # text=_["BACK_BUTTON"],
-            text="🏠 𝐔𝐩𝐝𝐚𝐭𝐞𝐬 🏠",
-            url=f"https://t.me/BikashGadgetsTech",
+            text="🏠 قناة السورس 🏠",
+            url=f"https://t.me/Mlze1bot",
         ),
         InlineKeyboardButton(
-            text="𝐂𝐫𝐞𝐚𝐭𝐨𝐫",
-            url=f"t.me/BikashHalder",
+            text="المطور",
+            url=f"t.me/A_S_A_S_K",
         ),
         InlineKeyboardButton(
-            text="𝐂𝐥𝐨𝐬𝐞", callback_data=f"close"
+            text="اغلاق", callback_data=f"close"
         ),
     ]
     mark = second if START else first
@@ -28,7 +28,7 @@ def help_pannel(_, START: Union[bool, int] = None):
         [
             [
                 InlineKeyboardButton(
-                    text="𝐀𝐝𝐦𝐢𝐧",
+                    text="الادمن",
                     callback_data="help_callback hb1",
                 ),
                 InlineKeyboardButton(
@@ -56,25 +56,25 @@ def help_pannel(_, START: Union[bool, int] = None):
             ],
             [
                 InlineKeyboardButton(
-                    text="𝐏𝐢𝐧𝐠",
+                    text="البنج",
                     callback_data="help_callback hb7",
                 ),
                 InlineKeyboardButton(
-                    text="𝐏𝐥𝐚𝐲 🔊",
+                    text="التشغيل 🔊",
                     callback_data="help_callback hb8",
                 ),
                 InlineKeyboardButton(
-                    text="𝐏𝐥𝐚𝐲𝐋𝐢𝐬𝐭",
+                    text="البث",
                     callback_data="help_callback hb6",
                 ),
             ],
             [
                 InlineKeyboardButton(
-                    text="𝐕𝐢𝐝𝐞𝐨𝐜𝐡𝐚𝐭𝐬",
+                    text="الفيديو",
                     callback_data="help_callback hb10",
                 ),
                 InlineKeyboardButton(
-                    text="𝐒𝐭𝐚𝐫𝐭",
+                    text="البدء",
                     callback_data="help_callback hb11",
                 ),
                 InlineKeyboardButton(
@@ -94,7 +94,7 @@ def help_back_markup(_):
             [
                 InlineKeyboardButton(
                     # text=_["BACK_BUTTON"],
-                    text="▷ 𝐁𝐚𝐜𝐤 ◁",
+                    text="▷ رجوع ◁",
                     callback_data=f"settings_back_helper",
                 ),
                 InlineKeyboardButton(
@@ -110,7 +110,7 @@ def private_help_panel(_):
     buttons = [
         [
             InlineKeyboardButton(
-                text="▷ 𝐁𝐚𝐜𝐤 ◁",
+                text="▷ ررجوع◁",
                 callback_data="settings_back_helper",
             ),
         ],
