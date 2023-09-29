@@ -18,7 +18,7 @@ LANGUAGE_COMMAND : ["اللغه", "language", "لغه"]
 
 # Play Commands
 PLAY_COMMAND : ["play", "bgt", "/bgt", "vplay", "cplay", "شغل", "ش", "vplayforce", "cplayforce", "cvplayforce"]
-PLAYMODE_COMMAND : ["playmode", "bgtmode"]
+PLAYMODE_COMMAND : ["playmode", "وضع"]
 CHANNELPLAY_COMMAND : ["channelplay"]
 STREAM_COMMAND : ["stream", "cstream", "streamforce"]
 
@@ -28,7 +28,7 @@ DELETEPLAYLIST_COMMAND : ["deleteplaylist"]
 
 
 # Tools
-QUEUE_COMMAND : ["queue","وضع", "player", "cplayer", "playing", "cplaying"]
+QUEUE_COMMAND : ["queue","القائمه", "player", "cplayer", "playing", "cplaying"]
 SONG_COMMAND : ["song", "بحث"]
 LYRICS_COMMAND : ["lyrics", "lyric"]
 
