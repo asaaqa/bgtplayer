@@ -11,7 +11,7 @@ if os.path.exists("Internal"):
 #, "/ ! ." 
 
 API_ID = int(getenv("API_ID" ""))
-API_HASH = getenv("API_HASH")
+API_HASH = getenv("API_HASH", "1fb7b1af2837205d7ce8d77cefc0acbd")
 BOT_TOKEN = getenv("BOT_TOKEN")
 COMMAND_PREFIXES = list(getenv("COMMAND_PREFIXES","").split())
 MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://vikashgup87:EDRIe3bdEq85Pdpl@cluster0.pvoygcu.mongodb.net/?retryWrites=true&w=majority")
