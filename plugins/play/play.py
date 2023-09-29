@@ -53,6 +53,21 @@ async def play_commnd(
     url,
     fplay,
 ):
+  if not await is_served_user(message.from_user.id):
+        await message.reply_text(
+            text="عذراً, انت غير مشترك بقناة البوت  🔁 /n انظم الى قناة البوت لاستخدام الاوامر .",
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton(
+                            text="إشتــراك هنا",
+                            url=f"https://t.me/Mlze1bot",
+                        )
+                    ]
+                ]
+            ),
+        )
+        return
     mystic = await message.reply_text(
         _["play_2"].format(channel) if channel else _["play_1"]
     )
