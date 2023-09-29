@@ -32,7 +32,7 @@ from Bikash.utils.formatters import get_readable_time
 from Bikash.utils.inline import (help_pannel, private_panel,
                                      start_pannel)
 
-START_COMMAND = asyncio.get_running_loop(START_COMMAND)
+loop = asyncio.get_running_loop()
 
 
 @app.on_message(
