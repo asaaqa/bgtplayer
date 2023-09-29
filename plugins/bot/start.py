@@ -32,11 +32,11 @@ from Bikash.utils.formatters import get_readable_time
 from Bikash.utils.inline import (help_pannel, private_panel,
                                      start_pannel)
 
-loop = asyncio.get_running_loop()
+START_COMMAND = asyncio.get_running_loop(START_COMMAND)
 
 
 @app.on_message(
-    filters.command(["start"])
+    filters.command("START_COMMAND")
     & filters.private
     & ~filters.edited
     & ~BANNED_USERS
