@@ -17,39 +17,14 @@
         "value": "",
         "required": true
       },
-      "API_HASH": {
-        "description": "Get this value from https://my.telegram.org",
-        "value": "",
-        "required": true
-      },
       "BOT_TOKEN": {
         "description": "Put Your Bot token from Botfather",
         "value": "",
         "required": true
       },
-      "MONGO_DB_URI": {
-        "description": "Get a mongodb url from https://cloud.mongodb.com. Below MONGOdb only for Test Don't Use Otherwise Your Bot Hack By Any Hacker",
-        "value": "mongodb+srv://Bikash:Bikash@bikash.yl2nhcy.mongodb.net/?retryWrites=true&w=majority",
-        "required": true
-      },
       "MUSIC_BOT_NAME": {
         "description": "A name for your Music Bot. You can use special characters",
         "value": "",
-        "required": true
-      },
-      "OWNER_ID": {
-        "description": "The user id(s) of user(s) whom you would like to add as a OWNER. Multiple values shall be seperated with a space.",
-        "value": "6228635168",
-        "required": true
-      },
-      "SUPPORT_GROUP": {
-        "description": "Input Your Support Group with Full Link like https://t.me/Bgt_Chat",
-        "value": "https://t.me/ASAAQLIO",
-        "required": true
-      },
-      "SUPPORT_CHANNEL": {
-        "description": "Input Your Support Channel full link ",
-        "value": "https://t.me/Mlze1bot",
         "required": true
       },
       "STRING_SESSION": {
