@@ -33,10 +33,10 @@ from Bikash.utils.inline import (help_pannel, private_panel,
                                      start_pannel)
 
 loop = asyncio.get_running_loop()
-
+HELP_COMMAND = get_command("START_COMMAND")
 
 @app.on_message(
-    filters.command(get_command("START_COMMAND"))
+    filters.command("START_COMMAND")
     & filters.private
     & ~filters.edited
     & ~BANNED_USERS
